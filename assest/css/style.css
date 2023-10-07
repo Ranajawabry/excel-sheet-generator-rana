@@ -21,9 +21,9 @@ table{
 }
 
 .data{
-    
+    height: 500px;
     overflow-x: auto !important;
-    overflow-y: auto
+    overflow-y: auto  !important
 }
 .table {
     border-collapse: separate;

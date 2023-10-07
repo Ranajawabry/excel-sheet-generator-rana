@@ -17,7 +17,7 @@ generate.addEventListener('click',(e)=>{
 })
 
 const generateTable =(columns,rows)=>{
-    
+
     if(columns==0 || columns==0 || columns<0 || rows <0){
         return
     }
@@ -34,22 +34,22 @@ const generateTable =(columns,rows)=>{
     }
 
     table.innerHTML = result;
-   
-}
-            
 
-    
-function htmlTableToExcel(type){
-    if(columns.value==0 || rows.value == 0){
+}
+
+
+
+function htmlTableToExcel(type) {
+    if (columns.value == 0 || rows.value == 0) {
         return
     }
     const data = document.querySelector('.table');
-    const excelFile = XLSX.utils.table_to_book(data, {sheet: "sheet1"});
+    const excelFile = XLSX.utils.table_to_book(data, { sheet: "sheet1" });
     XLSX.write(excelFile, { bookType: type, bookSST: true, type: 'base64' });
     XLSX.writeFile(excelFile, 'ExportedFile:HTMLTableToExcel.' + type);
-   }
-    
-       
+}
+
+
 
 
 
