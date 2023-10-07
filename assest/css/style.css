@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+th, td {
+    padding: 15px;
+  }
 td{
     border: 1px solid white;
     color: white;
@@ -13,6 +16,16 @@ td{
     padding: 8px 4px;
     font-size: 18px;
 }
-.table{
+table{
+    height: 500px;
+}
+
+.data{
+    
     overflow-x: auto !important;
+    overflow-y: auto
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 10px;
 }
